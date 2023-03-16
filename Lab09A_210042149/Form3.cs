@@ -20,8 +20,14 @@ namespace Lab09A_210042149
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            MessageBox.Show($"Logged in as : {GlobalClass._userName}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             userLabel.Text = GlobalClass._userName;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 abc = new Form1();
+            abc.ShowDialog();
         }
     }
 }
